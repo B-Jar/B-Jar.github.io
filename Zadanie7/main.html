@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Kursy programowania</title>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+        <link rel ="stylesheet" href="style/style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="boss">
+        <header>
+            <div class="mainbox">
+                <div class="title">Kursy dla programistów</div>
+            </div>
+        </header>
+        <article>    
+            <div class="textbox">
+                <div class="arttitle">
+                    Dlaczego powinienieś nauczyć sie programowania?
+                </div>
+                <p>
+                    Programista to stosunkowo nowy zawód na rynku pracy, lecz pomimo tego zarobki programistów są dla większości społeczeństwa imponujące. I ty możesz zostać jednym z nich
+                    Razem z nami, możesz to osiągnąć, poprzez uczestnictwo w jednym z naszych kursów.
+                </p>
+            </div>
+            <div class="textbox">
+                <div class="arttitle">
+                    Kursy jakich jękich języków oferujemy?
+                </div>
+                <p>
+                    Oferujemy kursy najpopularnejszych jezyków programowania takich jak: C#, C++, Python, JavaScript, PHP, SQL i wiele, wiele innych.
+                </p>
+            </div>
+            <div id="textbox1">
+                <div class="arttitle">
+                    Formularz kontaktowy
+                </div>
+                <form id="data" action="thanks.html" method="GET">
+                    <label for="fname">Imie:</label><br>
+                    <input type="text" class="text" id="fname" placeholder="Jan" required><br><br>
+
+                    <label for="lname">Nazwisko:</label><br>
+                    <input type="text" class="text" id="lname" placeholder="Kowalski" required><br><br>
+
+                    <label for="email">Adres E-mail:</label><br>
+                    <input type="text" class="text" id="email" placeholder="jankowalski@gmail.com" required><br><br>
+
+                    <label for="post">Kod pocztowy:</label><br>
+                    <input type="text" class="text" id="post" placeholder="05-220" required><br><br>
+                    
+                    <label>Płeć:</label><br>
+                    <label class="container">Mężczyzna
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">Kobieta
+                        <input type="radio" name="radio">
+                        <span class="checkmark" id="check2"></span>
+                      </label>
+                    
+                    <label>Miasto:</label><br>
+                    <select id="city" form="data">
+                        <option value="-----">-----</option>
+                        <option value="Warszawa">Warszawa</option>
+                        <option value="Poznań">Poznań</option>
+                        <option value="Kraków">Kraków</option>
+                        <option value="Wrocław">Wrocław</option>
+                    </select><br><br>
+                    
+                    <label for="textarea">Dodatkowe pytania i uwagi:</label><br>
+                    <textarea id="textarea" rows=6 cols=40 placeholder="Dodatkowe pytania i uwagi..."></textarea><br><br>
+
+                    <input type="submit" value="Zapisz" id="submit">
+
+                    <input type="reset" value="Reset" id="reset">
+                </form>
+            </div>
+        </article>
+        </div>
+    </body>
+</html>

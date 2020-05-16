@@ -1,0 +1,429 @@
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: lightskyblue;
+}
+  
+.container input:checked ~ #check2 {
+    background-color: violet;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+
+.container .checkmark:after {
+     top: 9px;
+     left: 9px;
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background: white;
+}
+
+label {
+    font-size: 2rem;
+}
+
+textarea {
+    resize: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Sen';
+}
+
+.text {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 20vw;
+    height: 5vh;
+    padding-left: 1vh;
+}
+
+#submit {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightgreen;
+    margin-right: 1vw;
+    width: 10vw;
+    height: 5vh;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Sen';
+}
+
+#reset {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightpink;
+    width: 10vw;
+    height: 5vh;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Sen';
+}
+
+select {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 20vw;
+    height: 5vh;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Sen';
+}
+
+input {
+    font-size: 2rem;
+    color: black;
+    font-family: 'Sen';
+}
+
+body {
+    font-family: 'Sen';
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+.textbox {
+    width: 80vw;
+    padding-left: 5vw;
+    padding-right: 15vw;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    height: 100vh;
+    background-color: lightyellow;
+    color: darkgrey;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#textbox1 {
+    width: 80vw;
+    padding-left: 5vw;
+    padding-right: 15vw;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    height: 160vh;
+    background-color: lightyellow;
+    color: darkgrey;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+footer {
+    width: 70vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: lightyellow;
+    color: darkgrey;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.mainbox {
+    width: 100vw;
+    height: 200vh;
+    background-color: lightyellow;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: center;
+}
+
+.title {
+    color: black;
+}
+
+.arttitle {
+    color: black;
+}
+
+p {
+    color: darkgrey;
+}
+
+.boss {
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media (max-width: 319px){
+    .title{
+        font-size: 0.7rem;
+    }
+
+    p{
+        font-size: 0.25rem;
+    }
+    
+    .arttitle{
+        font-size: 0.25rem;
+    }
+    textarea{
+        font-size: 0.17rem;
+    }
+    select{
+        font-size: 0.17rem;
+    }
+    input{
+        font-size: 0.17rem;
+    }
+    #submit{
+        font-size: 0.17rem;
+    }
+    #reset{
+        font-size: 0.17rem;
+    }
+    label{
+        font-size: 0.17rem;
+    }
+    .container {
+        font-size: 0.13rem;
+    }
+}
+
+@media (min-width: 320px){
+    .title{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.35rem;
+    }
+    
+    .arttitle{
+        font-size: 0.7rem;
+    }
+    textarea{
+        font-size: 0.2rem;
+    }
+    select{
+        font-size: 0.2rem;
+    }
+    input{
+        font-size: 0.2rem;
+    }
+    #submit{
+        font-size: 0.2rem;
+    }
+    #reset{
+        font-size: 0.2rem;
+    }
+    label{
+        font-size: 0.2rem;
+    }
+    .container {
+        font-size: 0.15rem;
+    }
+}
+
+
+@media (min-width: 576px){
+    .title{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+    .arttitle{
+        font-size: 2.2rem;
+    }
+    textarea{
+        font-size: 0.7rem;
+    }
+    select{
+        font-size: 0.7rem;
+    }
+    input{
+        font-size: 0.7rem;
+    }
+    #submit{
+        font-size: 0.7rem;
+    }
+    #reset{
+        font-size: 0.7rem;
+    }
+    label{
+        font-size: 0.7rem;
+    }
+    .container {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 768px){
+    .title{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .arttitle{
+        font-size: 3rem;
+    }
+    textarea{
+        font-size: 1rem;
+    }
+    select{
+        font-size: 1rem;
+    }
+    input{
+        font-size: 1rem;
+    }
+    #submit{
+        font-size: 1rem;
+    }
+    #reset{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    .container {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .title{
+        font-size: 6rem;
+    }
+
+    p{
+        font-size: 2.25rem;
+    }
+
+    .arttitle{
+        font-size: 4.5rem;
+    }
+    textarea{
+        font-size: 1.2rem;
+    }
+    select{
+        font-size: 1.2rem;
+    }
+    input{
+        font-size: 1.2rem;
+    }
+    #submit{
+        font-size: 1.2rem;
+    }
+    #reset{
+        font-size: 1.2rem;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    .container {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .title{
+        font-size: 8rem;
+    }
+
+    p{
+        font-size: 3rem;
+    }
+
+    .arttitle{
+        font-size: 6rem;
+    }
+    textarea{
+        font-size: 2rem;
+    }
+    select{
+        font-size: 2rem;
+    }
+    input{
+        font-size: 2rem;
+    }
+    #submit{
+        font-size: 2rem;
+    }
+    #reset{
+        font-size: 2rem;
+    }
+    label{
+        font-size: 2rem;
+    }
+    .container {
+        font-size: 1.5rem;
+    }
+}
+
+@media (orientation: portrait){
+    .mainbox{
+        padding-top: 8vh;
+        height: 6vh;
+    }
+
+    .title{
+        font-size: 8vh;
+    }
+
+    .textbox{
+        height: 30vh;
+    }
+}
+
+
+@media (orientation: landscape) and (max-width: 1000px){
+    .mainbox{
+        padding-top: 35vh;
+        padding-bottom: 10vh;
+        height: 35vh;
+    }
+}
